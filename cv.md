@@ -2,8 +2,6 @@
 
 ## Junior Frontend Developer
 
----
-
 ### Contact information:
 
 - Phone: +7 999 960-81-00
