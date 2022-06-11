@@ -95,7 +95,7 @@ p {
 /* Content */
 .content {
   margin-left: 200px;
-  flex-basis: 60%;
+  flex-basis: 55%;
   border-left: 2px solid var(--color-white);
   border-right: 2px solid var(--color-white);
 }
@@ -115,5 +115,19 @@ p {
 }
 
 .courses__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Info */
+.info__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills__list {
+  list-style: square;
+  list-style-position: inside;
+}
+.skills__item:not(:last-child) {
   margin-bottom: 10px;
 }
