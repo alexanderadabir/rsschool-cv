@@ -105,29 +105,17 @@ p {
   padding-left: 20px;
 }
 
-/* Courses */
-.courses {
-}
-
-.courses__list {
+/* List */
+.list {
   list-style: square;
   list-style-position: inside;
 }
 
-.courses__item:not(:last-child) {
+.list__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
 /* Info */
-.info__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-/* Skills */
-.skills__list {
-  list-style: square;
-  list-style-position: inside;
-}
-.skills__item:not(:last-child) {
-  margin-bottom: 10px;
+.info__list {
+  list-style: none;
 }
