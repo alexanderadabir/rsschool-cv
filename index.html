@@ -19,19 +19,40 @@
 <body>
   <div class="container">
     <header class="header">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="My photo">
       <div class="header__name">
         <h1 class="header__title">Alexander Adabir</h1>
         <h2 class="title">Frontend Developer & Freelancer</h2>
       </div>
       <ul class="contacts">
-        <li class="contacts__item"><a class="contacts__link" href="#">Russia, Moscow</a></li>
-        <li class="contacts__item"><a class="contacts__link" href="#">adabiralexander@gmail.com</a></li>
-        <li class="contacts__item"><a class="contacts__link" href="#">Telegram</a></li>
-        <li class="contacts__item"><a class="contacts__link" href="#">Discord</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--map"
+            href="https://www.google.com/maps/place/Moscow/@55.5815245,36.8251381,9z/data=!3m1!4b1!4m5!3m4!1s0x46b54afc73d4b0c9:0x3d44d6cc5757cf4c!8m2!3d55.755826!4d37.6172999">Russia,
+            Moscow</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--mail"
+            href="mailto:adabiralexander@gmail.com">E-mail</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--telegram"
+            href="https://t.me/alexanderadabir">Telegram</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--github"
+            href="https://github.com/alexanderadabir">Github</a></li>
       </ul>
     </header>
     <main class="main">
       <div class="content">
+        <section class="section about">
+          <h2 class="title">Briefly About Myself</h2>
+          <p class="about__text">I am 25 years old and I am a novice frontend developer. I love everything related to
+            web technologies and
+            programming. I came to RSchool to gain new knowledge and consolidate what I have already acquired in order
+            to find a job in the junior frontend developer in the future.</p>
+        </section>
+
+        <section class="section example">
+          <h2 class="title">Code example</h2>
+          <code class="example__code">const maxRedigit = function(num) {
+            return num > 100 && num < 1000 ? +num.toString().split('').sort((a, b) => b - a).join('') : null
+          };</code>
+        </section>
+
         <section class="section courses">
           <h2 class="title">Courses</h2>
           <ul class="list">
@@ -44,19 +65,42 @@
             <li class="list__item">Books</li>
           </ul>
         </section>
+
         <section class="section work">
           <h2 class="title">Work Experiences</h2>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <h3 class="work__title">HTML Academy</h3>
+              <p class="work__date">2020 - 2021</p>
+            </div>
+            <div class="work__right">
+              <h3 class="work__title">Student</h3>
+              <p class="work__text">He studied at the iron academy of the frontend day and night. A good place to start
+                and gives you a strong base to take the web industry further.</p>
+            </div>
+          </div>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <h3 class="work__title">-</h3>
+              <p class="work__date">2021 - present day</p>
+            </div>
+            <div class="work__right">
+              <h3 class="work__title">Freelancer</h3>
+              <p class="work__text">
+                I work on various freelance exchanges and carry out various kinds of orders</p>
+            </div>
+          </div>
         </section>
       </div>
       <aside class="aside">
         <section class="section info">
-          <h2 class="title info__title">Contact</h2>
+          <h2 class="title info__title">Contacts</h2>
           <ul class="info__list list">
-            <li class="list__item"><a class="info__link" href="https://github.com/alexanderadabir">Portfolio</a>
+            <li class="list__item"><a class="info__link"
+                href="https://github.com/alexanderadabir?tab=repositories">Portfolio</a>
             </li>
-            <li class="list__item"><a class="info__link" href="#">VK</a></li>
-            <li class="list__item"><a class="info__link" href="#">Telegram</a></li>
-            <li class="list__item"><a class="info__link" href="#">Discord</a></li>
+            <li class="list__item"><a class="info__link" href="https://vk.com/alexanderadabir">VK</a></li>
+            <li class="list__item"><a class="info__link" href="https://t.me/alexanderadabir">Telegram</a></li>
             <li class="list__item"><a class="info__link" href="tel:+79999608100">+7 (999) 960-81-00</a></li>
           </ul>
         </section>
@@ -105,7 +149,17 @@
         </section>
       </aside>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__col">
+        <a class="footer__link" href="https://github.com/alexanderadabir">GitHub</a>
+      </div>
+      <div class="footer__col">2022</div>
+      <div class="footer__col">
+        <a class="logo-school" href="https://rs.school/js/">
+          <img class="logo-school__img" src="assets/img/img.svg" alt="RSSchool Course JS">
+        </a>
+      </div>
+    </footer>
   </div>
 </body>
 

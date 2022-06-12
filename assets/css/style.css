@@ -30,8 +30,13 @@ ol {
 }
 
 a {
-  color: inherit;
+  color: var(--color-white);
   text-decoration: none;
+  transition: 0.3s linear color;
+}
+
+a:hover {
+  color: var(--color-yellow);
 }
 
 h1,
@@ -48,10 +53,15 @@ p {
   padding: 0 15px;
 }
 
+/* Avatar */
+.avatar {
+  width: 200px;
+}
+
 /* Header */
 .header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding-top: 100px;
   padding-bottom: 40px;
   border-bottom: 2px solid var(--color-white);
@@ -63,6 +73,10 @@ p {
   font-weight: 600;
 }
 
+.header__name {
+  margin-left: 20px;
+}
+
 /* Title */
 .title {
   font-size: 24px;
@@ -72,7 +86,35 @@ p {
 
 /* Contacts */
 .contacts {
+  margin-left: auto;
   text-align: right;
+}
+
+.contacts__link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__link--map::after {
+  background-image: url(../img/map.png);
+}
+
+.contacts__link--mail::after {
+  background-image: url(../img/mail.png);
+}
+
+.contacts__link--telegram::after {
+  background-image: url(../img/telegram.png);
+}
+
+.contacts__link--github::after {
+  background-image: url(../img/github.png);
 }
 
 .contacts__item:not(:last-child) {
@@ -80,6 +122,9 @@ p {
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: right;
   transition: 0.3s linear color;
 }
 
@@ -90,6 +135,17 @@ p {
 /* Main */
 .main {
   display: flex;
+}
+
+/* About */
+.about__text {
+  line-height: 1.5;
+  max-width: 95%;
+}
+
+/* Example */
+.example__code {
+  font-weight: 500;
 }
 
 /* Content */
@@ -105,6 +161,26 @@ p {
   padding-left: 20px;
 }
 
+/* Work */
+.work__wrapper {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  margin-bottom: 30px;
+}
+
+.work__title {
+  margin-bottom: 20px;
+}
+
+.work__text {
+  line-height: 1.5;
+}
+
+.work__date {
+  font-weight: 300;
+  color: var(--color-yellow);
+}
+
 /* List */
 .list {
   list-style: square;
@@ -118,4 +194,34 @@ p {
 /* Info */
 .info__list {
   list-style: none;
+}
+
+/* Aside */
+.aside {
+  padding-bottom: 200px;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: 200px auto 343px;
+  align-items: center;
+  border-top: 2px solid var(--color-white);
+  text-align: center;
+}
+
+.footer__link {
+  font-weight: 600;
+}
+
+.footer__col:nth-child(2) {
+  font-weight: 400;
+}
+
+.footer__col:nth-child(3) {
+  background-color: var(--color-white);
+}
+
+.logo-school__img {
+  height: 100px;
 }
