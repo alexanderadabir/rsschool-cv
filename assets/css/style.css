@@ -46,6 +46,10 @@ p {
   margin-top: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* Container */
 .container {
   max-width: 1230px;
@@ -53,23 +57,17 @@ p {
   padding: 0 15px;
 }
 
-/* Avatar */
-.avatar {
-  width: 200px;
-}
-
 /* Header */
 .header {
   display: flex;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding: 50px 0;
   border-bottom: 2px solid var(--color-white);
 }
 
 .header__title {
-  margin-bottom: 10px;
-  font-size: 50px;
+  margin-bottom: 15px;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -79,7 +77,7 @@ p {
 
 /* Title */
 .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-yellow);
 }
@@ -118,18 +116,13 @@ p {
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
   justify-content: right;
-  transition: 0.3s linear color;
-}
-
-.contacts__link:hover {
-  color: var(--color-yellow);
 }
 
 /* Main */
@@ -139,8 +132,7 @@ p {
 
 /* About */
 .about__text {
-  line-height: 1.5;
-  max-width: 95%;
+  max-width: 96%;
 }
 
 /* Example */
@@ -172,10 +164,6 @@ p {
   margin-bottom: 20px;
 }
 
-.work__text {
-  line-height: 1.5;
-}
-
 .work__date {
   font-weight: 300;
   color: var(--color-yellow);
@@ -183,7 +171,7 @@ p {
 
 /* List */
 .list {
-  list-style: square;
+  list-style: disc;
   list-style-position: inside;
 }
 
@@ -204,10 +192,11 @@ p {
 /* Footer */
 .footer {
   display: grid;
-  grid-template-columns: 200px auto 343px;
+  grid-template-columns: 200px auto 342px;
   align-items: center;
   border-top: 2px solid var(--color-white);
   text-align: center;
+  min-height: 100px;
 }
 
 .footer__link {
@@ -218,10 +207,10 @@ p {
   font-weight: 400;
 }
 
-.footer__col:nth-child(3) {
+.logo-school {
   background-color: var(--color-white);
 }
 
 .logo-school__img {
-  height: 100px;
+  max-height: 100px;
 }
