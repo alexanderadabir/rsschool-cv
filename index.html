@@ -1,11 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Adabir</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="Alexander Adabir" width="200">
+      <div class="header__name">
+        <h1 class="header__title">Alexander Adabir</h1>
+        <h2 class="title">Frontend Developer &amp;&nbsp;Freelancer</h2>
+      </div>
+      <ul class="contacts">
+        <li class="contacts__item"><a class="contacts__link contacts__link--map"
+            href="https://www.google.com/maps/place/Moscow/@55.5815245,36.8251381,9z/data=!3m1!4b1!4m5!3m4!1s0x46b54afc73d4b0c9:0x3d44d6cc5757cf4c!8m2!3d55.755826!4d37.6172999">Russia,
+            Moscow</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--mail"
+            href="mailto:adabiralexander@gmail.com">E-mail</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--telegram"
+            href="https://t.me/alexanderadabir">Telegram</a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--github"
+            href="https://github.com/alexanderadabir">Github</a></li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="content">
+        <section class="section about">
+          <h2 class="title">Briefly About Myself</h2>
+          <p class="about__text">I&nbsp;am 25&nbsp;years old and I&nbsp;am a&nbsp;novice frontend developer. I&nbsp;love
+            everything related to
+            web technologies and
+            programming. I&nbsp;came to&nbsp;RSchool to&nbsp;gain new knowledge and consolidate what&nbsp;I have already
+            acquired in&nbsp;order
+            to&nbsp;find a&nbsp;job in&nbsp;the junior frontend developer in&nbsp;the future.</p>
+        </section>
+
+        <section class="section example">
+          <h2 class="title">Code example</h2>
+          <p class="example__code"><code>const maxRedigit = function(num) {
+            return num &gt; 100&nbsp;&amp;&amp; num &lt; 1000 ? +num.toString().split(&rsquo;&rsquo;).sort((a, b) =&gt; b&nbsp;&mdash; a).join(&rsquo;&rsquo;) : null
+            };</code></p>
+        </section>
+
+        <section class="section courses">
+          <h2 class="title">Courses</h2>
+          <ul class="list">
+            <li class="list__item">HTML Academy</li>
+            <li class="list__item">W3Schools</li>
+            <li class="list__item">MDN</li>
+            <li class="list__item">JavaScript Manual</li>
+            <li class="list__item">RS&nbsp;Schools Courses</li>
+            <li class="list__item">Youtube channels</li>
+            <li class="list__item">Books</li>
+          </ul>
+        </section>
+
+        <section class="section work">
+          <h2 class="title">Work Experiences</h2>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <h3 class="work__title">HTML Academy</h3>
+              <p class="work__date">2020 &mdash; 2021</p>
+            </div>
+            <div class="work__right">
+              <h3 class="work__title">Student</h3>
+              <p class="work__text">He&nbsp;studied at&nbsp;the iron academy of&nbsp;the frontend day and night.
+                A&nbsp;good place to&nbsp;start
+                and gives you a&nbsp;strong base to&nbsp;take the web industry further.</p>
+            </div>
+          </div>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <p class="work__date">2021 &mdash; present day</p>
+            </div>
+            <div class="work__right">
+              <h3 class="work__title">Freelancer</h3>
+              <p class="work__text">
+                I&nbsp;work on&nbsp;various freelance exchanges and carry out various kinds of&nbsp;orders</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside class="aside">
+        <section class="section info">
+          <h2 class="title info__title">Contacts</h2>
+          <ul class="info__list list">
+            <li class="list__item"><a class="info__link"
+                href="https://github.com/alexanderadabir?tab=repositories">Portfolio</a>
+            </li>
+            <li class="list__item"><a class="info__link" href="https://vk.com/alexanderadabir">VK</a></li>
+            <li class="list__item"><a class="info__link" href="https://t.me/alexanderadabir">Telegram</a></li>
+            <li class="list__item"><a class="info__link" href="tel:+79999608100">+7 (999) 960-81-00</a></li>
+          </ul>
+        </section>
+
+        <section class="section skills">
+          <h2 class="title">Skills</h2>
+          <ul class="list">
+            <li class="list__item">Web Performance</li>
+            <li class="list__item">Clean and readable code</li>
+            <li class="list__item">Userbility testing</li>
+            <li class="list__item">Responsive design</li>
+            <li class="list__item">Have good interpersonal skills</li>
+          </ul>
+        </section>
+
+        <section class="section tools">
+          <h2 class="title">Tools</h2>
+          <ul class="list">
+            <li class="list__item">Figma</li>
+            <li class="list__item">Adobe Photoshop</li>
+            <li class="list__item">VSCode&nbsp;| Sublime Text</li>
+            <li class="list__item">Gulp</li>
+            <li class="list__item">Git&nbsp;| Github</li>
+            <li class="list__item">Pixel perfect</li>
+          </ul>
+        </section>
+
+        <section class="section techno">
+          <h2 class="title">Technologies</h2>
+          <ul class="list">
+            <li class="list__item">HTML5</li>
+            <li class="list__item">CSS3&nbsp;| SCSS</li>
+            <li class="list__item">JavaScript</li>
+            <li class="list__item">React</li>
+            <li class="list__item">BEM</li>
+            <li class="list__item">CSS frameworks</li>
+          </ul>
+        </section>
+
+        <section class="section lang">
+          <h2 class="title">Languages</h2>
+          <ul class="list">
+            <li class="list__item">Russian &mdash; Native</li>
+            <li class="list__item">English &mdash; A2</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="footer__col">
+        <a class="footer__link" href="https://github.com/alexanderadabir">GitHub</a>
+      </div>
+      <div class="footer__col">2022</div>
+      <a class="logo-school" href="https://rs.school/js/">
+        <img class="logo-school__img" src="assets/img/img.svg" alt="RSSchool Course JS">
+      </a>
+    </footer>
+  </div>
+</body>
+
 </html>
